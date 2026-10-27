@@ -12,7 +12,7 @@ const COLS = parseInt(process.env.STRESS_SEATS_PER_ROW || '10', 10);
 const HOT_SEAT_USERS = parseInt(process.env.STRESS_HOT_SEAT_USERS || '50', 10);
 const QUOTA_REQUESTS = parseInt(process.env.STRESS_QUOTA_USER_REQUESTS || '10', 10);
 const RANDOM_USERS = parseInt(process.env.STRESS_RANDOM_USERS || '100', 10);
-const BATCH_SIZE = 200;
+const BATCH_SIZE = parseInt(process.env.STRESS_BATCH_SIZE || '500', 10);
 
 const log = (msg: string) => console.log(`[${new Date().toISOString()}] ${msg}`);
 

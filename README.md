@@ -208,6 +208,7 @@ Stress test parameters can be customized in `.env`:
 | `STRESS_HOT_SEAT_USERS` | 20 | Number of concurrent users fighting over seat `A1` |
 | `STRESS_QUOTA_USER_REQUESTS` | 10 | Concurrent requests from a single user attempting to exceed quota |
 | `STRESS_RANDOM_USERS` | 100 | General concurrent bookings across random seats |
+| `STRESS_BATCH_SIZE` | 500 | Max concurrent HTTP requests dispatched per batch |
 
 ### Sample Output
 
